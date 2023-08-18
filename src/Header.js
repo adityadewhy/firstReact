@@ -1,16 +1,20 @@
 import React from "react";
 
+import ReactIcon from "./assets/React-icon.png";
+
 export default function Header() {
-    return (
-        <header>
-            <nav className="nav">
-                <img src={require('./assets/React-icon.png')} alt="logo" className="nav-logo" />
-                <ul className="nav-items">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </header>
-    );
+	return (
+		<header>
+			<nav className="nav">
+				<div className="logo">
+					<img src={ReactIcon} alt="logo" className="nav-logo" />
+					<p>ReactFacts</p>
+				</div>
+
+				<div className="projectName">
+					<p>React Course - Project</p>
+				</div>
+			</nav>
+		</header>
+	);
 }
